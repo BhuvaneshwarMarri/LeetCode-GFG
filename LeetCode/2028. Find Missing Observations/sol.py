@@ -4,8 +4,7 @@ class Solution:
         sum_m=sum(rolls)
         sum_n=mean*(n+m)-sum_m
 
-        # print(sum_m,sum_n)
-        #condition verification
+        
         if sum_n<0 or (sum_n==0 and n!=0) or sum_n//n>6 or (sum_n//n==6 and sum_n%n!=0) or sum_n//n==0:
             return []
         
